@@ -1,7 +1,8 @@
-# Webkit
+#Android Webkit
 [![](https://jitpack.io/v/com.vinkas/webkit.svg)](https://jitpack.io/#com.vinkas/webkit)
 <hr />
 Easy to use android module to create apps for responsive or mobile websites using custom WebView. Build your website's own android app in minutes!!!
+####[Download Sample APK](https://github.com/Vinkas-com/Webkit/releases/download/1.0.0/sample.apk)
 ##Add as dependency module
 ```
   repositories { 
