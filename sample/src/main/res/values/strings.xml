@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Webkit Sample</string>
+    <string name="title_activity_main">Webkit Sample</string>
 </resources>

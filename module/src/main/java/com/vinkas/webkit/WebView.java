@@ -11,6 +11,11 @@ import android.webkit.WebSettings;
  */
 public class WebView extends android.webkit.WebView {
 
+    public void setOnPageLoadListener(OnPageLoadListener onPageLoadListener) {
+        webViewClient.setOnPageLoadListener(onPageLoadListener);
+        webChromeClient.setOnPageLoadListener(onPageLoadListener);
+    }
+
     public WebView(Context context) {
         super(context);
         initialize();
@@ -38,12 +43,25 @@ public class WebView extends android.webkit.WebView {
     }
 
     public void initialize() {
-        setWebViewClient(new WebViewClient());
-        setWebChromeClient(new WebChromeClient());
+        webViewClient = new WebViewClient();
+        setWebViewClient(webViewClient);
+        webChromeClient = new WebChromeClient();
+        setWebChromeClient(webChromeClient);
         getSettings().setJavaScriptEnabled(true);
         getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
         getSettings().setDomStorageEnabled(true);
         getSettings().setAppCacheEnabled(true);
         setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+    }
+
+    private WebViewClient webViewClient;
+    private WebChromeClient webChromeClient;
+
+    public WebChromeClient getWebChromeClient() {
+        return webChromeClient;
+    }
+
+    public WebViewClient getWebViewClient() {
+        return webViewClient;
     }
 }
