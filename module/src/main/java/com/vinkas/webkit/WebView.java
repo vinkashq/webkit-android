@@ -2,6 +2,7 @@ package com.vinkas.webkit;
 
 import android.annotation.TargetApi;
 import android.content.Context;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 import android.webkit.WebSettings;
@@ -47,6 +48,15 @@ public class WebView extends android.webkit.WebView {
         setWebViewClient(webViewClient);
         webChromeClient = new WebChromeClient();
         setWebChromeClient(webChromeClient);
+        if(Build.VERSION.SDK_INT < 18)
+            getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
+        if (Build.VERSION.SDK_INT >= 19) {
+            // chromium, enable hardware acceleration
+            setLayerType(View.LAYER_TYPE_HARDWARE, null);
+        } else {
+            // older android version, disable hardware acceleration
+            setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+        }
         getSettings().setJavaScriptEnabled(true);
         getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
         getSettings().setDomStorageEnabled(true);
