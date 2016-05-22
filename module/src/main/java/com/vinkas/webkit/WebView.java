@@ -51,6 +51,8 @@ public class WebView extends android.webkit.WebView {
         getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
         getSettings().setDomStorageEnabled(true);
         getSettings().setAppCacheEnabled(true);
+        getSettings().setPluginsEnabled(true);
+        addJavascriptInterface(new JsObject(), "Vinkas");
         setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
     }
 
@@ -63,5 +65,9 @@ public class WebView extends android.webkit.WebView {
 
     public WebViewClient getWebViewClient() {
         return webViewClient;
+    }
+    
+    class JavascriptInterface {
+        public String toString() { return "Vinkas"; }
     }
 }
