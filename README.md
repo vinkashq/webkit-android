@@ -1,4 +1,6 @@
 #Android Webkit
+
+[![Join the chat at https://gitter.im/vinkas-com/webkit](https://badges.gitter.im/vinkas-com/webkit.svg)](https://gitter.im/vinkas-com/webkit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![](https://jitpack.io/v/com.vinkas/webkit.svg)](https://jitpack.io/#com.vinkas/webkit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
 <hr />
