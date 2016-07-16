@@ -1,7 +1,7 @@
 #Android Webkit
 
-[![Build Status](https://travis-ci.org/vinkas-com/webkit.svg?branch=master)](https://travis-ci.org/Vinkas-com/Webkit)
-[![](https://jitpack.io/v/com.vinkas/webkit.svg)](https://jitpack.io/#com.vinkas/webkit)
+[![Build Status](https://travis-ci.org/vinkas0/webkit-android.svg?branch=master)](https://travis-ci.org/vinkas0/webkit-android)
+[![](https://jitpack.io/v/com.vinkas/webkit-android.svg)](https://jitpack.io/#com.vinkas/webkit-android)
 [![Join the chat at https://gitter.im/vinkas-com/webkit](https://badges.gitter.im/vinkas-com/webkit.svg)](https://gitter.im/vinkas-com/webkit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
 <hr />
